@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e2f;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.timeline {
+    position: relative;
+    margin: 20px auto;
+    padding: 20px 0;
+    width: 90%;
+    max-width: 600px;
+}
+/* Timeline line */
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 3%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100%;
+    background: rgb(202, 194, 194);
+}
+
+.timeline-item {
+    position: relative;
+    margin: 20px 0;
+    display: flex;
+    align-items: flex-start;
+}
+
+.timeline-icon {
+    position: relative;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.timeline-icon.primary {
+    background: #007bff;
+}
+
+.timeline-icon.danger {
+    background: #dc3545;
+}
+
+.timeline-icon.success {
+    background: #28a745;
+}
+
+.timeline-content {
+    background: #2a2a3c;
+    padding: 15px;
+    border-radius: 8px;
+    width: 100%;
+    position: relative;
+}
+
+.timeline-content::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: -10px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #2a2a3c transparent transparent;
+}
+
+/* Adjust colors for different types */
+.timeline-icon.primary + .timeline-content {
+    background: #007bff;
+}
+
+.timeline-icon.primary + .timeline-content::before {
+    border-color: transparent #007bff transparent transparent;
+}
+
+.timeline-icon.danger + .timeline-content {
+    background: #dc3545;
+}
+
+.timeline-icon.danger + .timeline-content::before {
+    border-color: transparent #dc3545 transparent transparent;
+}
+
+.timeline-icon.success + .timeline-content {
+    background: #28a745;
+}
+
+.timeline-icon.success + .timeline-content::before {
+    border-color: transparent #28a745 transparent transparent;
+}
+
+.timeline-content h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.timeline-content p {
+    margin: 0 0 10px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.timeline-content span {
+    font-size: 12px;
+    color: #e4dfdf;
+    background-color: #dc3545;
+    padding: 3px;
+    border-radius: 5px;
+}
