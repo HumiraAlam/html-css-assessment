@@ -39,7 +39,7 @@ body {
 
 .hero-content {
   position: absolute;
-  right: 10%; /* Adjust this value to match the Figma design */
+  right: 10%; 
   top: 50%; /* Center vertically */
   transform: translateY(-40%); /* Adjust for perfect vertical centering */
   z-index: 2; /* Place the content above the image */

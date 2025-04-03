@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="../FINAL PROJECT/assets/css/styles/index.css">
-    <link rel="stylesheet" href="../FINAL PROJECT/assets/css/styles/navbar.css">
-    <link rel="stylesheet" href="../FINAL PROJECT/assets/css/styles/footer.css">
+    <title>Shop</title>
+
+    <link rel="stylesheet" href="../FINAL PROJECT/assets/css/Styles/navbar.css">
+    <link rel="stylesheet" href="../FINAL PROJECT/assets/css/Styles/footer.css">
+    <link rel="stylesheet" href="../FINAL PROJECT/assets/css/Styles/shop.css">
 
 </head>
 
 <body>
-    <!-- Navbar code -->
-
+    <!-- navbar -->
     <nav class="navbar">
         <div class="logo">
             <img src="../FINAL PROJECT/assets/images/logo.png" alt="logo" class="logo-img">
@@ -54,49 +54,75 @@
         </div>
     </nav>
 
-    <!-- Hero section code -->
+    <!-- hero section -->
 
     <section class="hero">
         <div class="hero-image">
-            <img src="../FINAL PROJECT/assets/images/hero-background.png" alt="Modern Interior Design">
+            <img src="../FINAL PROJECT/assets/images/hero-shop.png" alt="Modern shop Design">
         </div>
 
         <div class="hero-content">
-            <div class="hero-badge">New Arrival</div>
-            <h1 class="hero-title">Discover Modern Comfort</h1>
-            <p class="hero-desc">Elevate your living space with our carefully curated furniture collection. Blend style,
-                comfort, and functionality for your perfect home.</p>
-            <a href="#" class="hero-btn">Shop Now</a>
+            <h1 class="hero-title">Shop</h1>
+            <div class="hero-badge">Home > Shop</div>
         </div>
         <div class="hero-overlay"></div>
+        <div class="filter-bar">
+            <div class="filter-options">
+                <button class="filter-btn">
+                    <img src="../FINAL PROJECT/assets/images/filter-icon.png" alt="Filter Icon" class="icon"> Filter
+                </button>
+                <button class="grid-btn">
+                    <img src="../FINAL PROJECT/assets/images/grid-icon.png" alt="Grid Icon" class="icon">
+                </button>
+                <button class="list-btn">
+                    <img src="../FINAL PROJECT/assets/images/list-icon.png" alt="List Icon" class="icon">
+                </button>
+            </div>
+            <p class="results-text">Showing 1–16 of 32 results</p>
+            <div class="sort-options">
+                <label for="show">Show</label>
+                <input type="number" id="show" class="show-input" value="16" min="1">
+                <label for="sort">Sort by</label>
+                <select id="sort" class="sort-select">
+                    <option value="default">Default</option>
+                    <option value="price-low-high">Price: Low to High</option>
+                    <option value="price-high-low">Price: High to Low</option>
+                    <option value="newest">Newest</option>
+                </select>
+            </div>
+        </div>
+
+
     </section>
 
-
-    <!-- Browse Range section code -->
-
-    <section class="browse-range">
-        <div class="browse-header">
-            <h2 class="browse-title">Browse The Range</h2>
-            <p class="browse-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <!-- filter-bar -->
+    <section class="filter-bar">
+        <div class="filter-options">
+            <button class="filter-btn">
+                <img src="../FINAL PROJECT/assets/images/filtering.png" alt="Filter Icon" class="icon"> Filter
+            </button>
+            <button class="grid-btn">
+                <img src="../FINAL PROJECT/assets/images/gridicon.png" alt="Grid Icon" class="icon">
+            </button>
+            <button class="list-btn">
+                <img src="../FINAL PROJECT/assets/images/icon-shop.png" alt="List Icon" class="icon">
+            </button>
         </div>
-        <div class="browse-grid">
-            <div class="browse-card">
-                <img src="../FINAL PROJECT/assets/images/dining.png" alt="Dining" class="browse-image">
-                <h3 class="browse-card-title">Dining</h3>
-            </div>
-            <div class="browse-card">
-                <img src="../FINAL PROJECT/assets/images/bed room.png" alt="bedrooom" class="browse-image">
-                <h3 class="browse-card-title">Living</h3>
-            </div>
-            <div class="browse-card">
-                <img src="../FINAL PROJECT/assets/images/living room.png" alt="living room" class="browse-image">
-                <h3 class="browse-card-title">Bedroom</h3>
-            </div>
+        <p class="results-text">Showing 1–16 of 32 results</p>
+        <div class="sort-options">
+            <label for="show">Show</label>
+            <input type="number" id="show" class="show-input" value="16" min="1">
+            <label for="sort">Sort by</label>
+            <select id="sort" class="sort-select">
+                <option value="default">Default</option>
+                <option value="price-low-high">Price: Low to High</option>
+                <option value="price-high-low">Price: High to Low</option>
+                <option value="newest">Newest</option>
+            </select>
         </div>
     </section>
 
-    <!-- Products section code -->
-
+    <!-- product grid -->
     <section class="products">
         <div class="products-header">
             <h2 class="products-title">Our Products</h2>
@@ -292,99 +318,44 @@
                 </div>
             </div>
         </div>
-        <button class="show-more-btn">Show More</button>
+        <button class="page-btn">1</button>
+        <button class="page-btn-inactive">2</button>
+        <button class="page-btn-inactive">3</button>
+        <button class="page-btn-inactive">Next</button>
     </section>
 
-    <!-- Product Room section code -->
-
-    <section class="room-slider">
-        <div class="room-header">
-            <h2 class="room-title">50+ Beautiful rooms inspiration</h2>
-            <p class="room-desc">
-                Our designer already made a lot of beautiful prototypes of rooms that inspire you.
-            </p>
-            <a href="#" class="hero-btn">Explore More</a>
-        </div>
-        <div class="slider-container">
-            <div class="slider-track">
-                <!-- Slide 1 -->
-                <div class="slide active">
-                    <img src="../FINAL PROJECT/assets/images/room1.png" alt="Room 1">
-                    <div class="slide-info">
-                        <span class="slide-number">01 — Bed Room</span>
-                        <h3 class="slide-title">Inner Peace</h3>
-                        <a href="#" class="slide-btn">→</a>
-                    </div>
-                </div>
-                <!-- Slide 2 -->
-                <div class="slide">
-                    <img src="../FINAL PROJECT/assets/images/room2.png" alt="Room 2">
-                    <div class="slide-info">
-                        <span class="slide-number">02 — Living Room</span>
-                        <h3 class="slide-title">Cozy Vibes</h3>
-                        <a href="#" class="slide-btn">→</a>
-                    </div>
-                </div>
-                <!-- Slide 3 -->
-                <div class="slide">
-                    <img src="../FINAL PROJECT/assets/images/room3.png" alt="Room 3">
-                    <div class="slide-info">
-                        <span class="slide-number">03 — Dining Room</span>
-                        <h3 class="slide-title">Elegant Dining</h3>
-                        <a href="#" class="slide-btn">→</a>
-                    </div>
-                </div>
+    <!-- support section -->
+        <section class="support-bar">
+        <div class="support-item">
+            <img src="../FINAL PROJECT/assets/images/trophy.png" alt="High Quality" class="support-icon">
+            <div class="support-text">
+                <h4>High Quality</h4>
+                <p>crafted from top materials</p>
             </div>
         </div>
-        <!-- Dots Navigation -->
-        <div class="dots-navigation">
-            <span class="dot active"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
+        <div class="support-item">
+            <img src="../FINAL PROJECT/assets/images/guarantee.png" alt="Warranty Protection" class="support-icon">
+            <div class="support-text">
+                <h4>Warranty Protection</h4>
+                <p>Over 2 years</p>
+            </div>
         </div>
-    </section>
-
-    <!-- Funiro Gallery section code -->
-
-    <section class="funiro-gallery">
-        <div class="gallery-header">
-            <p class="gallery-subtitle">Share your setup with</p>
-            <h2 class="gallery-title">#FuniroFurniture</h2>
+        <div class="support-item">
+            <img src="../FINAL PROJECT/assets/images/shipping.png" alt="Free Shipping" class="support-icon">
+            <div class="support-text">
+                <h4>Free Shipping</h4>
+                <p>Order over 150 $</p>
+            </div>
         </div>
-        <div class="gallery-grid">
-
-            <div class="gallery-item">
-                <img src="../FINAL PROJECT/assets/images/Rectangle 36.png" alt="Gallery Image 2">
-            </div>
-            <div class="gallery-item">
-                <img src="../FINAL PROJECT/assets/images/Rectangle 39.png" alt="Gallery Image 5">
-            </div>
-            <div class="gallery-item">
-                <img src="../FINAL PROJECT/assets/images/Rectangle 37.png" alt="Gallery Image 3">
-            </div>
-            <div class="gallery-item">
-                <img src="../FINAL PROJECT/assets/images/Rectangle 38.png" alt="Gallery Image 4">
-            </div>
-
-            <div class="gallery-item">
-                <img src="../FINAL PROJECT/assets/images/Rectangle 40.png" alt="Gallery Image 6">
-            </div>
-            <div class="gallery-item">
-                <img src="../FINAL PROJECT/assets/images/Rectangle 41.png" alt="Gallery Image 7">
-            </div>
-            <div class="gallery-item">
-                <img src="../FINAL PROJECT/assets/images/Rectangle 43.png" alt="Gallery Image 8">
-            </div>
-            <div class="gallery-item">
-                <img src="../FINAL PROJECT/assets/images/Rectangle 44.png" alt="Gallery Image 9">
-            </div>
-            <div class="gallery-item">
-                <img src="../FINAL PROJECT/assets/images/Rectangle 45.png" alt="Gallery Image 10">
+        <div class="support-item">
+            <img src="../FINAL PROJECT/assets/images/support.png" alt="24/7 Support" class="support-icon">
+            <div class="support-text">
+                <h4>24 / 7 Support</h4>
+                <p>Dedicated support</p>
             </div>
         </div>
     </section>
-
-    <!-- footer code -->
+    <!-- Footer -->
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-col">
@@ -429,6 +400,7 @@
             <p>&copy; 2025 Funiro. All rights reserved.</p>
         </div>
     </footer>
+
 </body>
 
 </html>

@@ -1,0 +1,362 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+/* Hero section styles */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 350px; /* only the hero image */
+  padding: 0 10%; /* Add padding for spacing */
+  position: relative;
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 316px;
+  object-fit: cover; /* Ensures the image covers the entire section */
+  z-index: 1; /* Place the image behind the content */
+}
+
+.hero-image img {
+  width: 100%;
+  height: 316px;
+  object-fit: cover;
+}
+
+.hero-content {
+  position: absolute;
+  right: 50%;
+  top: 40%; /* Center vertically */
+  z-index: 2; /* Place the content above the image */
+}
+
+.hero-badge {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #333; /* Keep the text color */
+}
+
+.hero-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #b88e2f; /* Gold color */
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1; /* Place the overlay above the image */
+}
+
+/* Filter Bar Section */
+
+.filter-bar {
+  position: absolute;
+  top: 305px; /* Adjust this value to position the filter bar correctly */
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f9f1e7; /* Light beige background */
+  padding: 15px 20px;
+  border: 2px solid #ddd; /* Subtle border at the top */
+  z-index: 2; /* Place the filter bar above the image */
+  font-size: 14px;
+}
+
+.filter-options {
+  display: flex;
+  gap: 10px;
+}
+
+.filter-btn,
+.grid-btn,
+.list-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: transparent;
+  border: 0px none transparent;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.filter-btn img,
+.grid-btn img,
+.list-btn img {
+  width: 16px;
+  height: 16px;
+}
+
+.results-text {
+  font-size: 14px;
+  color: #666;
+}
+
+.sort-options {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.show-input {
+  width: 50px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  color: #9f9f9f;
+  text-align: center;
+}
+
+.sort-select {
+  width: 80px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  color: #9f9f9f;
+}
+
+/* Product grid Section */
+.products {
+  padding: 60px 10%; /* Add spacing around the section */
+  text-align: center;
+  background-color: #ffffff; /* White background */
+}
+
+.products-header {
+  margin-bottom: 40px; /* Space between header and grid */
+}
+
+.products-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #333333; /* Dark gray */
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+  gap: 20px; /* Space between cards */
+}
+
+.product-card {
+  position: relative;
+  background-color: #fefaf5; /* Light beige background */
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden; /* Ensure content stays within the card */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #e0e0e0; /* Light gray border for clarity */
+}
+
+.product-card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.product-card:hover .product-hover-overlay {
+  opacity: 1; /* Show the overlay on hover */
+  visibility: visible;
+}
+
+.product-image {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the card without distortion */
+}
+
+.product-hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black overlay */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Initially hidden */
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.product-hover-overlay button {
+  background-color: #ffffff; /* White button */
+  color: #b88e2f; /* Gold text */
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.product-hover-overlay button:hover {
+  background-color: #b88e2f; /* Gold background on hover */
+  color: #ffffff; /* White text on hover */
+  transform: scale(1.05);
+}
+
+.product-hover-overlay .hover-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.product-hover-overlay .hover-actions span {
+  color: #ffffff; /* White text */
+  font-size: 14px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.product-hover-overlay .hover-actions span:hover {
+  color: #b88e2f; /* Gold text on hover */
+}
+
+.product-discount {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #ff6b6b; /* Red background for discount */
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.product-info {
+  padding: 15px;
+  text-align: left;
+}
+
+.product-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333333; /* Dark gray */
+  margin-bottom: 5px;
+}
+
+.product-desc {
+  font-size: 14px;
+  color: #6b6b6b; /* Medium gray */
+  margin-bottom: 10px;
+}
+
+.product-price {
+  font-size: 16px;
+  font-weight: 700;
+  color: #b88e2f; /* Gold color */
+}
+
+.product-old-price {
+  font-size: 14px;
+  color: #6b6b6b; /* Medium gray */
+  text-decoration: line-through;
+  margin-left: 10px;
+}
+
+.page-btn {
+  margin-top: 30px;
+  padding: 10px 10px;
+  background-color: #b88e2f; /* Gold button */
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.page-btn-inactive {
+  margin-top: 30px;
+  padding: 10px 10px;
+  color: #6b6b6b;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.page-btn:hover {
+  background-color: #8b6a21; /* Darker gold on hover */
+}
+.page-btn-inactive:hover {
+  background-color: #8b6a21;
+  color: #ddd;
+}
+
+/*support section*/
+/* Support Bar Section */
+.support-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff7eb; /* Light beige background */
+    padding: 20px 10%;
+    border-top: 1px solid #ddd; /* Subtle border at the top */
+    border-bottom: 1px solid #ddd; /* Subtle border at the bottom */
+    text-align: center;
+}
+
+.support-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex: 1; /* Equal spacing for all items */
+}
+
+.support-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.support-text h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.support-text p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
