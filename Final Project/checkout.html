@@ -1,11 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout</title>
+
+    <link rel="stylesheet" href="../Final Project/assets/css/Styles/navbar.css">
+    <link rel="stylesheet" href="../Final Project/assets/css/Styles/checkout.css">
+    <link rel="stylesheet" href="../Final Project/assets/css/Styles/footer.css">
 </head>
+
 <body>
-    
+    <!-- Navbar Section  -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="../FINAL PROJECT/assets/images/logo.png" alt="logo" class="logo-img">
+            <img src="../FINAL PROJECT/assets/images/logo-text.png" alt="logo-text" class="logo-text">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-icons">
+
+            <svg class="nav-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
+                    stroke="#242424" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <svg class="nav-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21"
+                    stroke="#242424" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                    d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z"
+                    stroke="#242424" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <svg class="nav-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M9 22C9.55228 22 10 21.5523 10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22Z"
+                    stroke="#242424" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                    d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z"
+                    stroke="#242424" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                    d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6"
+                    stroke="#242424" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </div>
+    </nav>
+
+    <!-- hero section -->
+    <section class="hero">
+        <div class="hero-image">
+            <img src="../FINAL PROJECT/assets/images/hero-shop.png" alt="Modern shop Design">
+        </div>
+
+        <div class="hero-content">
+            <img class="hero-logo" src="../Final Project/assets/Images/logo.png" alt="Logo">
+            <h1 class="hero-title">Checkout</h1>
+            <div class="hero-badge">Home > Checkout</div>
+        </div>
+
+    </section>
+    <!-- checkout section  -->
+    <section class="checkout-section">
+        <div class="billing-details">
+            <h2 class="section-title">Billing details</h2>
+            <form class="billing-form">
+                <div class="form-group">
+                    <div class="form-group-inline">
+                        <label for="name">First Name</label>
+                        <input type="text">
+                    </div>
+                    <div class="form-group-inline">
+                        <label for="name">Last Name</label>
+                        <input type="text">
+                    </div>
+                </div>
+
+                    <label for="name">Company Name (Optional)</label>
+                <input type="text">
+
+                    <label for="name">Country / Region</label>
+                <select>
+                    <option value="Sri Lanka">Sri Lanka</option>
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                </select>
+
+                    <label for="name">Street address</label>
+                <input type="text">
+
+                    <label for="name">Town / City</label>
+                <input type="text">
+
+                    <label for="name">Province</label>
+                <select>
+                    <option value="Sri Lanka">Western Province</option>
+                    <option value="India">Central Province</option>
+                    <option value="USA">Southern Province</option>
+                </select>
+
+                    <label for="name">Zip code</label>
+                <input type="text">
+
+                    <label for="name">Phone</label>
+                <input type="text">
+
+                <label for="name">Email Address</label>
+                <input type="text">
+
+                <input type="text" placeholder="Additional information">
+            </form>
+        </div>
+        <div class="order-summary">
+            <div class="summary-header">
+                <h2>Product</h2>
+                <h2>Subtotal</h2>
+            </div>
+            <div class="summary-item">
+                <p><span class="asgaard-sofa">Asgaard sofa</span> x 1</p>
+                <span>Rs. 250,000.00</span>
+            </div>
+            <div class="summary-item">
+                <span>Subtotal</span>
+                <span>Rs. 250,000.00</span>
+            </div>
+            <div class="summary-item">
+                <span>Total</span>
+                <span class="total">Rs. 250,000.00</span>
+            </div>
+            <hr>
+            <div class="payment-methods">
+                <div class="bank-transfer">
+                    <div class="black-circle"></div>
+                    <p>Direct Bank Transfer</p>
+                </div>
+                <p class="sub-title">Make your payment directly into our bank account. Please use your Order ID as the
+                    payment reference. Your order will not be shipped until the funds have cleared in our account.
+                </p>
+                <label>
+                    <input type="radio" name="payment">
+                    Direct Bank Transfer
+                </label>
+                <label>
+                    <input type="radio" name="payment">
+                    Cash On Delivery
+                </label>
+            </div>
+            <p class="privacy-policy">Your personal data will be used to support your experience throughout this
+                website, to manage access to your account, and for other purposes described in our <span
+                    class="bold">privacy policy.</span></p>
+
+            <div class="btn-container">
+                <button class="place-order-btn">Place order</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- support section -->
+    <section class="support-bar">
+        <div class="support-item">
+            <img src="../FINAL PROJECT/assets/images/trophy.png" alt="High Quality" class="support-icon">
+            <div class="support-text">
+                <h4>High Quality</h4>
+                <p>crafted from top materials</p>
+            </div>
+        </div>
+        <div class="support-item">
+            <img src="../FINAL PROJECT/assets/images/guarantee.png" alt="Warranty Protection" class="support-icon">
+            <div class="support-text">
+                <h4>Warranty Protection</h4>
+                <p>Over 2 years</p>
+            </div>
+        </div>
+        <div class="support-item">
+            <img src="../FINAL PROJECT/assets/images/shipping.png" alt="Free Shipping" class="support-icon">
+            <div class="support-text">
+                <h4>Free Shipping</h4>
+                <p>Order over 150 $</p>
+            </div>
+        </div>
+        <div class="support-item">
+            <img src="../FINAL PROJECT/assets/images/support.png" alt="24/7 Support" class="support-icon">
+            <div class="support-text">
+                <h4>24 / 7 Support</h4>
+                <p>Dedicated support</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section  -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Funiro.</h3>
+                <p>Worldwide furniture store since 2020. We sell over 1000+ branded products on our website</p>
+                <p>123 Street, City, Country</p>
+                <p>+1234567890</p>
+            </div>
+
+            <div class="footer-col">
+                <h3>Menu</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Rooms</a></li>
+                    <li><a href="#">Inspirations</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Terms & Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Account</h3>
+                <ul class="footer-links">
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                    <li><a href="cart.html">My Cart</a></li>
+                    <li><a href="#">My catalog</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Stay Connected</h3>
+                <p>Subscribe to our newsletter to get updates on our latest offers!</p>
+                <div class="subscribe-form">
+                    <input type="email" class="subscribe-input" placeholder="Enter your email">
+                    <button class="subscribe-btn">Subscribe</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <p>&copy; 2025 Funiro. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
+
 </html>

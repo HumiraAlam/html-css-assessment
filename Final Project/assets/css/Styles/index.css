@@ -124,10 +124,10 @@
 }
 
 .browse-card {
-  background-color: #fefaf5; /* Light beige background */
-  border-radius: 8px; /* Rounded corners */
-  overflow: hidden; /* Ensure content stays within the card */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  background-color: #fefaf5;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 1px solid #e0e0e0; /* Light gray border for clarity */
 }
@@ -138,11 +138,11 @@
 }
 
 .browse-image {
-  width: 381px; /* Ensure the image spans the full width of the card */
-  height: 400px; /* Adjust height to make it consistent */
-  object-fit: cover; /* Ensure the image covers the card without distortion */
-  border-radius: 0; /* Remove any extra rounding on the image itself */
-  display: block; /* Ensure the image behaves like a block element */
+  width: 381px;
+  height: 400px;
+  object-fit: cover; 
+  border-radius: 0; 
+  display: block;
 }
 
 .browse-card-title {
@@ -447,9 +447,9 @@
 
 /* Funiro Gallery Section */
 .funiro-gallery {
-  padding: 60px 10%; /* Add spacing around the section */
+  padding: 60px 10%; 
   text-align: center;
-  background-color: #ffffff; /* White background */
+  background-color: #ffffff;
 }
 
 .gallery-header {
