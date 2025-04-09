@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+
+    <link rel="stylesheet" href="./assets/css/Styles/navbar.css">
+    <link rel="stylesheet" href="./assets/css/Styles/cart.css">
+    <link rel="stylesheet" href="./assets/css/Styles/footer.css">
+    <link rel="stylesheet" href="./assets/css/responsive/cartRes.css">
+</head>
+
+<body>
+
+    <!-- Navbar Code  -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./assets/images/logo.png" alt="logo" class="logo-img">
+            <img src="./assets/images/logo-text.png" alt="logo-text" class="logo-text">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-icons">
+
+            <svg class="nav-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
+                    stroke="#242424" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <svg class="nav-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21"
+                    stroke="#242424" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                    d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z"
+                    stroke="#242424" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <svg class="nav-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M9 22C9.55228 22 10 21.5523 10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22Z"
+                    stroke="#242424" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                    d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z"
+                    stroke="#242424" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                    d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6"
+                    stroke="#242424" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </div>
+    </nav>
+
+    <!-- hero section -->
+    <section class="hero">
+        <div class="hero-image">
+            <img src="./assets/images/hero-shop.png" alt="Modern shop Design">
+        </div>
+
+        <div class="hero-content">
+            <img class="hero-logo" src="./assets/Images/logo.png" alt="Logo">
+            <h1 class="hero-title">Cart</h1>
+            <div class="hero-badge">Home > Cart</div>
+        </div>
+
+    </section>
+    <!-- cart total section  -->
+    <section class="cart-total-section">
+        <div class="product-details">
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Subtotal</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="product-info">
+                            <img class="asgaard-sofa-img" src="./assets/Images/Asgaard sofa 3.png"
+                                alt="Product Image">
+                            <span>Asgaard sofa</span>
+                        </td>
+                        <td>Rs. 250,000.00</td>
+                        <td><input type="number" value="1" min="1"></td>
+                        <td class="Subtotal">Rs. 250,000.00</td>
+                        <!-- <td><button class="remove-btn">🗑️</button></td> -->
+                        <td><img class="remove-btn" src="./assets/Images/remove-icom.png" alt=""></td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="cart-total">
+            <div class="cart-summary">
+                <h2>Cart Totals</h2>
+                <div class="summary-item">
+                    <span>Subtotal</span>
+                    <span>Rs. 250,000.00</span>
+                </div>
+                <div class="summary-item total">
+                    <span>Total</span>
+                    <span>Rs. 250,000.00</span>
+                </div>
+                <div class="checkout-btn-container">
+                    <button class="checkout-btn">Check Out</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- support section -->
+    <section class="support-bar">
+        <div class="support-item">
+            <img src="./assets/images/trophy.png" alt="High Quality" class="support-icon">
+            <div class="support-text">
+                <h4>High Quality</h4>
+                <p>crafted from top materials</p>
+            </div>
+        </div>
+        <div class="support-item">
+            <img src="./assets/images/guarantee.png" alt="Warranty Protection" class="support-icon">
+            <div class="support-text">
+                <h4>Warranty Protection</h4>
+                <p>Over 2 years</p>
+            </div>
+        </div>
+        <div class="support-item">
+            <img src="./assets/images/shipping.png" alt="Free Shipping" class="support-icon">
+            <div class="support-text">
+                <h4>Free Shipping</h4>
+                <p>Order over 150 $</p>
+            </div>
+        </div>
+        <div class="support-item">
+            <img src="./assets/images/support.png" alt="24/7 Support" class="support-icon">
+            <div class="support-text">
+                <h4>24 / 7 Support</h4>
+                <p>Dedicated support</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer section  -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Funiro.</h3>
+                <p>Worldwide furniture store since 2020. We sell over 1000+ branded products on our website</p>
+                <p>123 Street, City, Country</p>
+                <p>+1234567890</p>
+            </div>
+
+            <div class="footer-col">
+                <h3>Menu</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Rooms</a></li>
+                    <li><a href="#">Inspirations</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Terms & Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Account</h3>
+                <ul class="footer-links">
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                    <li><a href="cart.html">My Cart</a></li>
+                    <li><a href="#">My catalog</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Stay Connected</h3>
+                <p>Subscribe to our newsletter to get updates on our latest offers!</p>
+                <div class="subscribe-form">
+                    <input type="email" class="subscribe-input" placeholder="Enter your email">
+                    <button class="subscribe-btn">Subscribe</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <p>&copy; 2025 Funiro. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
